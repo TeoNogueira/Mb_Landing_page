@@ -17,16 +17,16 @@
 
 height: 100vh;
 width: 100%;
-background-image: linear-gradient(rgba(0, 0, 0,0.85), rgba(0, 0, 0,0.85)), url(/assets/images/selena.jpg);
+background-image: linear-gradient(rgba(0, 0, 0,0.85), rgba(0, 0, 0,0.85)), url(/assets/images/fanny.jpg);
 background-position: center;
 background-size: cover;
 position: relative;
 padding-right: 5%;
 padding-left: 3%;
-padding-top: 10px;
+
 }
 
-/*NAVBAR*/
+/*NAVBAR */
 
 .navbar {
 width: 100%;
@@ -73,12 +73,15 @@ margin-left: 20px;
 }
 
 
+h3:hover { cursor: not-allowed;}
+
+
 /*NAV, UL, LI, a*/
 
 nav {
 
     flex: 1;
-    padding-left: 380px;
+    padding-left: 480px;
 }
 
 nav ul li {
@@ -99,7 +102,7 @@ text-transform: uppercase;
 
 nav ul li a:hover {
 
-color: #7545ac;
+color: #5debb5;
 transition: 0.5s;
 
 }
@@ -116,6 +119,7 @@ transition: 0.5s;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
+
 }
 
 .text {
@@ -123,4 +127,84 @@ transition: 0.5s;
     font-size: 80px;
     font-weight: 700;
     text-transform: uppercase;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+p {
+
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 40px 0;
+
+}
+
+.btn {
+
+background: linear-gradient(to right, transparent 60%, #5db2eb);
+background-size: 200% auto;
+background-position: left;
+margin-top: 70px;
+text-align: center;
+padding: 15px 45px;
+border: 1px solid  #5db2eb;
+outline: none;
+cursor:pointer;
+font-weight: 600;
+font-size: 24px;
+color: #fff;
+box-shadow: 3px 8px 22px rgba(22, 21, 21, .15);
+transition: background-position .9s;
+border-radius: 2px;
+
+}
+
+.btn:hover {
+    
+    background-position: right;
+    color: #1b1b1b;
+    color: #ebb25d;
+    animation: btn 10s forwards infinite;
+
+}
+
+/*SLIDER MOBILE LEGENDS*/
+
+.slider {
+
+color: #5debb5;
+margin-left: 14px;
+animation: slider 10s forwards infinite;
+
+
+}
+
+
+@keyframes slider {
+
+ 
+        0% {color:  #ebb25d;}
+        42%  { color: #d35deb;}
+         78% {color:  #5debb5;}
+         100% {color:  #ebb25d;}
+}
+
+
+/*KeyFrames Button*/
+
+
+
+
+    @keyframes btn {
+
+ 
+        0% {color:  #fff;}
+        48%  { color: #5debb5;}
+         100% {color:  #fff;}
 }
